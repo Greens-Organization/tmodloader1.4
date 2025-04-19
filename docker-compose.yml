@@ -2,6 +2,8 @@ services:
   tmodloader:
     image: 'jacobsmile/tmodloader1.4:latest'
     container_name: 'tmodloader'
+    tty: true
+    stdin_open: true
     ports:
       - "7777:7777"
     expose:
